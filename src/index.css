@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image{
+    background-image: url("https://images.pexels.com/photos/28909951/pexels-photo-28909951.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;fp-y=0.5&amp;h=125&amp;w=87.5");
+    background-size: cover;
+    background-position: center center;
+    height: 85vh;
+    opacity: 10;
+}
+
+.navbar {
+    width: 100%;
+    padding: 1rem 2.5rem;
+    position: relative; 
+    transition: all 0.4s ease;
+    z-index: 1000;
+  }
+  /* add media query */
+  @media (max-width: 708px) {
+    .navbar {
+      padding: 1rem 1rem;
+    }
+    .image{
+      height: 60vh;
+      opacity: 1;
+    }
+  }
+  .navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px #fff8f81a;
+    color: black;
+    font-size: 1.3rem;
+  }
